@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Day2Study/Day2Study.iml" filepath="$PROJECT_DIR$/Day2Study/Day2Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day3Study/Day3Study.iml" filepath="$PROJECT_DIR$/Day3Study/Day3Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Day4Study/Day4Study.iml" filepath="$PROJECT_DIR$/../Day4Study/Day4Study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExtendTest1/ExtendTest1.iml" filepath="$PROJECT_DIR$/../ExtendTest1/ExtendTest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExtendTest2/ExtendTest2.iml" filepath="$PROJECT_DIR$/../ExtendTest2/ExtendTest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Extends/Extends.iml" filepath="$PROJECT_DIR$/../Extends/Extends.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ExtendsTest/ExtendsTest.iml" filepath="$PROJECT_DIR$/../ExtendsTest/ExtendsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../HomeWork/HomeWork.iml" filepath="$PROJECT_DIR$/../HomeWork/HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JavaBean/JavaBean.iml" filepath="$PROJECT_DIR$/../JavaBean/JavaBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RewriteMethod/RewriteMethod.iml" filepath="$PROJECT_DIR$/../RewriteMethod/RewriteMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../String/String.iml" filepath="$PROJECT_DIR$/../String/String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../StudentManger/StudentManger.iml" filepath="$PROJECT_DIR$/../StudentManger/StudentManger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Test1/Test1.iml" filepath="$PROJECT_DIR$/../Test1/Test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TestInterface/TestInterface.iml" filepath="$PROJECT_DIR$/../TestInterface/TestInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../This/This.iml" filepath="$PROJECT_DIR$/../This/This.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../abstarck/abstarck.iml" filepath="$PROJECT_DIR$/../abstarck/abstarck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../array/array.iml" filepath="$PROJECT_DIR$/../array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../duotai/duotai.iml" filepath="$PROJECT_DIR$/../duotai/duotai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../duotaiTest/duotaiTest.iml" filepath="$PROJECT_DIR$/../duotaiTest/duotaiTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../interface/interface.iml" filepath="$PROJECT_DIR$/../interface/interface.iml" />
+    </modules>
+  </component>
+</project>

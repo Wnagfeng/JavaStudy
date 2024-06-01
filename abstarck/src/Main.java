@@ -7,6 +7,14 @@ public class Main {
         s.drink();
         D.eta();
         D.drink();
+
+
+
+
+
+
+
+
         System.out.println("Hello world!");
     }
 }

@@ -26,20 +26,23 @@ public class utils {
 
 
 //        演示事件监听
-        JButton button = new JButton("Click me!");
+//        JButton button = new JButton("Click me!");
 //        使用匿名内部类对象
 //        为啥需要重写ActionListener接口的actionPerformed方法？
 
 //        因为ActionListener接口中只有一个方法，而我们需要在这个方法中做一些处理，比如按钮点击事件。
-        button.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent e) {
-                System.out.println("Button clicked!");
-            }}
-        );
-        JFrame frame = new JFrame();
-        frame.add(button);
-        frame.pack();
-        frame.setVisible(true);
+//        button.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(java.awt.event.ActionEvent e) {
+//                System.out.println("Button clicked!");
+//            }}
+//        );
+//        JFrame frame = new JFrame();
+//        frame.add(button);
+//        frame.pack();
+//        frame.setVisible(true);
+//      定义一个二维数组
+        int [][] array={{1},{2},{3},{4}};
+        array[1][0]=0;
     }
 }

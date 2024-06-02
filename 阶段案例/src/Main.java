@@ -3,7 +3,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         new GAMEframe();
-        // new Loginframe();
+//         new Loginframe();
         // new Registerframe();
     }
 }

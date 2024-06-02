@@ -16,6 +16,6 @@ public class Main {
 
        System.arraycopy(arr1, 0, arr2, 0, arr1.length);
         System.out.println(Arrays.toString(arr2));
-        
+
     }
 }

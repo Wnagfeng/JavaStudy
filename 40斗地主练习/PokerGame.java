@@ -10,10 +10,16 @@ static ArrayList<String> cards = new ArrayList<String>();
     for(int i=0;i<Color.length;i++){
         for(int j=0;j<number.length;j++){
             cards.add(Color[i]+number[j]);
+
         }
     }
-        cards.add("小王");
-        cards.add("大王");
+        // 检查大小王是否已经存在于列表中，避免重复添加
+        if (!cards.contains("小王")) {
+            cards.add("小王");
+        }
+        if (!cards.contains("大王")) {
+            cards.add("大王");
+        }
 }
 //    洗牌
    public PokerGame(){

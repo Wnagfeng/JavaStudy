@@ -6,3 +6,4 @@ public class Table {
         System.out.println("Joon" + '\t' + "21");
     }
 }
+

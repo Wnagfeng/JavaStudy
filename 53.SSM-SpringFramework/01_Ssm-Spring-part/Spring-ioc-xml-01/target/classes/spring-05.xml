@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    id：是getObject 方法返回的对象的标识
+    class：是你创建的标准化工厂类
+    -->
+    <bean id="javaBean" class="com.ioc_05.JavaBeanFactoryBean"></bean>
+
+</beans>

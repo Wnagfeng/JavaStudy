@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    一:bean的配置-->
+    <!-- 引用和被引用必须都在一个ioc容器中-->
+    <!--    1.单个依赖的注入-->
+    <bean id="userDao" class="com.ioc_02.UserDao"></bean>
+    <bean id="userService" class="com.ioc_02.UserService">
+        <!--        在这里配置DI也就是依赖注入-->
+        <!--       value:是直接属性值比如 string name = "张三" 等等-->
+        <!--        ref:属性值是用来引用其他bean的id 也就是userDao-->
+        <constructor-arg ref="userDao"></constructor-arg>
+    </bean>
+    <!--    2.多个依赖注入-->
+    <bean id="userDao1" class="com.ioc_02.UserDao1"></bean>
+    <bean id="userService1" class="com.ioc_02.UserService1">
+        <!--        多个依赖注入按照顺序来注入-->
+        <constructor-arg value="19"></constructor-arg>
+        <constructor-arg value="Joon"></constructor-arg>
+        <constructor-arg ref="userDao1"></constructor-arg>
+    </bean>
+    <!--    二:触发setter方法注入-->
+    <bean id="MovieFinder" class="com.ioc_02.MovieFinder"></bean>
+    <bean id="SimpleMovieLister" class="com.ioc_02.SimpleMovieLister">
+        <!--        触发setter方法注入-->
+        <!--        name:是setter方法的名字 他表示你要触发那个class的setter方法-->
+        <!--        name的由来: 他是类中的set方法去掉首字母然后小写第一个字母-->
+        <!--        比如: setUserName(String name) 那么name就是userName-->
+        <!--        ref和value二选一-->
+        <!--        注意看类的需求一个是需要注入类一个是需要注入值-->
+        <property name="movieFinder" ref="MovieFinder"></property>
+        <property name="movieName" value="大人物"></property>
+    </bean>
+
+
+</beans>

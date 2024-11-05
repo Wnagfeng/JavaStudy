@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring-ioc-annotation(HomeWorke)" />
         <module name="spring-ioc-annotation-03" />
         <module name="Spring-ioc-xml-practice-02" />
         <module name="spring-annotation-practice-04" />

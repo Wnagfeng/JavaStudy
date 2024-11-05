@@ -5,10 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7a3c0c-7482-4f72-887c-6539aaa6d1c5" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/resources/springannotation_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/test/java/springannotation_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/controller/studentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/dao/studentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/dao/studentDaoimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/service/studentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-annotation-practice-04/src/main/java/org/example/service/studentServiceimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_02/BeanOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_03/SoldierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_03/SoldierDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_03/SoldierServiceimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_03/SoldierServiceimpl1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_03/soldierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_04/CommonComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/resources/springannotation_02.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/resources/springannotation_03.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/resources/springannotation_04.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_01/XxxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/main/java/org/example/ioc_01/XxxController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc-annotation-03/src/test/java/springannotation_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/src/test/java/springannotation_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc-annotation-03/target/classes/org/example/ioc_01/XxxController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/target/classes/org/example/ioc_01/XxxController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc-annotation-03/target/test-classes/springannotation_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc-annotation-03/target/test-classes/springannotation_01.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +40,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,8 +65,12 @@
     "JUnit.Test.test.executor": "Run",
     "JUnit.Test.test1.executor": "Run",
     "JUnit.springannotation_01.executor": "Run",
+    "JUnit.springannotation_01.testIoc_02.executor": "Run",
+    "JUnit.springannotation_01.testIoc_03.executor": "Run",
+    "JUnit.springannotation_01.testIoc_04.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
@@ -66,39 +92,21 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Joon\Desktop\eshop-mall-master\eshop-backend-java\Ssm-Spring-part\Spring-ioc-xml-01\src\main\java\com\ioc_02" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example.dao" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.ioc_03" />
       <recent name="com.ioc_04" />
       <recent name="com.ioc_03" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Test.getBeanFormIoc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring-ioc-xml-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.joon.test.SpringIoCTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.joon.test.SpringIoCTest" />
-      <option name="MAIN_CLASS_NAME" value="com.joon.test.SpringIoCTest.Test" />
-      <option name="METHOD_NAME" value="getBeanFormIoc" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring-ioc-xml-01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.joon.test.SpringIoCTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.joon.test.SpringIoCTest" />
-      <option name="MAIN_CLASS_NAME" value="com.joon.test.SpringIoCTest.Test" />
-      <option name="METHOD_NAME" value="test" />
+  <component name="RunManager" selected="JUnit.ControllerTest.testRun">
+    <configuration name="ControllerTest.testRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-annotation-practice-04" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="testRun" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,6 +128,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="springannotation_01.testIoc_02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-ioc-annotation-03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="springannotation_01" />
+      <option name="METHOD_NAME" value="testIoc_02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springannotation_01.testIoc_03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-ioc-annotation-03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="springannotation_01" />
+      <option name="METHOD_NAME" value="testIoc_03" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springannotation_01.testIoc_04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-ioc-annotation-03" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="springannotation_01" />
+      <option name="METHOD_NAME" value="testIoc_04" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Ssm-Spring-part" />
       <method v="2">
@@ -135,9 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest.testRun" />
+        <item itemvalue="JUnit.springannotation_01.testIoc_04" />
+        <item itemvalue="JUnit.springannotation_01.testIoc_03" />
+        <item itemvalue="JUnit.springannotation_01.testIoc_02" />
         <item itemvalue="JUnit.Test.test1" />
-        <item itemvalue="JUnit.Test.test" />
-        <item itemvalue="JUnit.Test.getBeanFormIoc" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +202,7 @@
       <workItem from="1730538553814" duration="1956000" />
       <workItem from="1730594695397" duration="2896000" />
       <workItem from="1730788673527" duration="8000" />
-      <workItem from="1730788692092" duration="732000" />
+      <workItem from="1730788692092" duration="6426000" />
     </task>
     <servers />
   </component>

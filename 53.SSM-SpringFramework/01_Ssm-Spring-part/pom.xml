@@ -14,6 +14,9 @@
         <module>spring-ioc-annotation-03</module>
         <module>spring-annotation-practice-04</module>
         <module>Spring-ioc-annotation(HomeWorke)</module>
+        <module>spring-bean-01</module>
+        <module>spring-ioc-05</module>
+        <module>spring-ioc-practice-06</module>
     </modules>
 
     <properties>

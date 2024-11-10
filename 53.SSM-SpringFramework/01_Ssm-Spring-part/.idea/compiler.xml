@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-ioc-annotation(HomeWorke)" />
         <module name="Spring-ioc-xml-practice-02" />
+        <module name="spring-aop-annotation-07" />
         <module name="spring-ioc-annotation-03" />
         <module name="spring-annotation-practice-04" />
         <module name="spring-ioc-practice-06" />
@@ -16,6 +17,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring" target="1.8" />
+      <module name="spring-annotation-07" target="1.8" />
       <module name="spring-bean-01" target="1.8" />
     </bytecodeTargetLevel>
   </component>

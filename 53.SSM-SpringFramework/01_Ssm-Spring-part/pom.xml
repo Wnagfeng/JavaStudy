@@ -14,32 +14,34 @@
         <module>spring-ioc-annotation-03</module>
         <module>spring-annotation-practice-04</module>
         <module>Spring-ioc-annotation(HomeWorke)</module>
-        <module>spring-bean-01</module>
         <module>spring-ioc-05</module>
         <module>spring-ioc-practice-06</module>
+        <module>spring-aop-annotation-07</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
-        <!--spring context依赖-->
-        <!--当你引入Spring Context依赖之后，表示将Spring的基础依赖引入了-->
+        <!--Spring Context依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.15</version> <!-- 一个较新同时兼容Java 8的版本 -->
+            <version>5.3.15</version>
         </dependency>
 
-        <!--junit5测试-->
+        <!--JUnit 5测试-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.3.1</version>
+            <version>5.8.2</version> <!-- 更新到较新版本 -->
+            <scope>test</scope>
         </dependency>
-        <!-- 数据库驱动和连接池-->
+
+        <!--数据库驱动和连接池-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -52,14 +54,25 @@
             <version>1.2.8</version>
         </dependency>
 
-        <!-- spring-jdbc -->
+        <!--Spring JDBC-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>5.3.14</version> <!-- 选择合适的版本 -->
+            <version>5.3.15</version> <!-- 使用一致的版本 -->
         </dependency>
 
+        <!--Spring AOP以及AspectJ依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>5.3.15</version> <!-- 使用一致的版本 -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.15</version> <!-- 使用一致的版本 -->
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
-
 </project>

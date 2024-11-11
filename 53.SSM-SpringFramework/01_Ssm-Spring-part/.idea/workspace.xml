@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7a3c0c-7482-4f72-887c-6539aaa6d1c5" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/java/org/example/advice/Logadvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/java/org/example/config/JavaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/java/org/example/pointcut/MyPointcut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/java/org/example/service/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/java/org/example/service/CalculatorPureImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/main/resources/spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-aop-annotation-07/src/test/java/SpringAoptest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/config/Javaconfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/dao/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/test/java/SpringTexTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -43,6 +40,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2oEaWk0EEAC6oXKCX2EBaxXUxE3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -56,6 +56,7 @@
     "JUnit.ControllerTest.testRun.executor": "Run",
     "JUnit.SpringAoptest.executor": "Run",
     "JUnit.SpringAoptest.testAdd.executor": "Run",
+    "JUnit.SpringTexTest.testUserService.executor": "Run",
     "JUnit.Test.getBeanFormIoc.executor": "Debug",
     "JUnit.Test.test.executor": "Run",
     "JUnit.Test.test1.executor": "Run",
@@ -103,7 +104,7 @@
       <recent name="com.ioc_03" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringAoptest.testAdd">
+  <component name="RunManager" selected="JUnit.SpringTexTest.testUserService">
     <configuration name="ControllerTest.testRun (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-ioc-practice-06" />
       <option name="PACKAGE_NAME" value="" />
@@ -134,21 +135,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring-ioc-05" />
+    <configuration name="SpringTexTest.testUserService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Spring-tx-08" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="SpringTexTest" />
+      <option name="METHOD_NAME" value="testUserService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testHomeWorke.testHomeWorke" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Spring-ioc-annotation(HomeWorke)" />
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-ioc-05" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testHomeWorke" />
-      <option name="METHOD_NAME" value="testHomeWorke" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringTexTest.testUserService" />
         <item itemvalue="JUnit.SpringAoptest.testAdd" />
         <item itemvalue="JUnit.ControllerTest.testRun" />
         <item itemvalue="JUnit.ControllerTest.testRun (1)" />
         <item itemvalue="JUnit.Test.test" />
-        <item itemvalue="JUnit.testHomeWorke.testHomeWorke" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +208,7 @@
       <workItem from="1731138720909" duration="638000" />
       <workItem from="1731153243606" duration="3870000" />
       <workItem from="1731231554536" duration="8876000" />
+      <workItem from="1731309485285" duration="5431000" />
     </task>
     <servers />
   </component>

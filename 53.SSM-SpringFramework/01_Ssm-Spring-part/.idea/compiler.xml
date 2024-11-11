@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-ioc-annotation(HomeWorke)" />
         <module name="Spring-ioc-xml-practice-02" />
+        <module name="Spring-tx-08" />
         <module name="spring-aop-annotation-07" />
         <module name="spring-ioc-annotation-03" />
         <module name="spring-annotation-practice-04" />

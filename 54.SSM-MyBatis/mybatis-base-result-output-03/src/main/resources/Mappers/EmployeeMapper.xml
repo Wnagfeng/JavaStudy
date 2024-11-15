@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<mapper namespace="org.example.mapper.EmployeeMapper">
+    <!--   DML语句-->
+    <insert id="inser">
+        insert into employee(name, age, email)
+        values(#{name}, #{age}, #{email})
+    </insert>
+    <!--    查询单个简单类型返回单个简单类型-->
+    <!--    resultType的语法就是：类的全限定符或者别名简称-->
+    <!--    下面你可以写String或者 java.lang.String 都可以-->
+    <select id="selectNameById" resultType="string">
+        select name from employee where id = #{id}
+    </select>
+    <!--    查询单个复杂类型返回单个复杂类型 这我们写类的全限定符-->
+    <!--    这里的复杂类型你可以只写一个employee 或者写org.example.domain.Employee-->
+    <select id="selectById" resultType="org.example.pojo.Employee">
+        <!--
+        我们之前在这里写的sql都需要起别名：
+        比如：
+        select emp_id empId, emp_name empName, emp_age empAge, emp_email empEmail from employee where emp_id = #{id}
+        现在我们可以直接写：
+        select * from employee where id = #{id}
+        这样就不需要起别名了
+        但是你需要开启设置
+           <setting name="mapUnderscoreToCamelCase" value="true"/>
+        -->
+        select * from t_emp where emp_id = #{id}
+    </select>
+
+    <!--    查询返回map类型-->
+    <select id="selectEmpNameAndMaxSalary" resultType="map">
+        SELECT
+        emp_name AS 员工姓名,
+        emp_salary AS 员工工资,
+        (SELECT AVG(emp_salary) FROM t_emp) AS 部门平均工资
+        FROM
+        t_emp
+        WHERE
+        emp_salary = (
+        SELECT MAX(emp_salary) FROM t_emp
+        )
+    </select>
+
+    <!--    查询返回list类型-->
+    <!--    这里如果是list类型，我们不需要写集合我们只需要写上集合的泛型
+        比如你在接口中写的返回值类型是 List<string> 那么在这里你需要写 resultType="string"就行
+        -->
+    <select id="selectBySalaryGreaterThan" resultType="org.example.pojo.Employee">
+        select * from t_emp where emp_salary > #{salary}
+    </select>
+    <!--    查询所有信息-->
+    <select id="selectAll" resultType="org.example.pojo.Employee">
+        select * from t_emp
+    </select>
+    <!--    插入主键回显，获取插入的数据的主键【自增长类型】-->
+    <!--    如果你想获取插入的数据的主键，需要在insert标签中设置useGeneratedKeys="true"和keyColumn="emp_id" keyProperty="emp_id"-->
+    <insert id="insertEmployee" useGeneratedKeys="true" keyColumn="emp_id" keyProperty="emp_id">
+        insert into t_emp(emp_name, emp_salary) values(#{name}, #{empSalary})
+    </insert>
+
+
+
+
+</mapper>

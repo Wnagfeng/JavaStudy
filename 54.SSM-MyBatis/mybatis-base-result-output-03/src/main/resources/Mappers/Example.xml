@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.ExampleMapper">
+
+    <!-- 插入主键回显，获取插入的数据的主键【非自增长类型】 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        <selectKey resultType="string" keyProperty="id" order="BEFORE">
+            SELECT REPLACE(UUID(), '-', '')  <!-- 这个地方应该返回整数类型的 ID -->
+        </selectKey>
+
+        INSERT INTO t_example (id, name)
+        VALUES (#{id}, #{name})
+    </insert>
+
+</mapper>

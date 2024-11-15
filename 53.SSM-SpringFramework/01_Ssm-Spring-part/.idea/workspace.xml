@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b7a3c0c-7482-4f72-887c-6539aaa6d1c5" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/config/Javaconfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/java/org/example/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spring-tx-08/src/test/java/SpringTexTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,44 +40,44 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ControllerTest.executor": "Run",
-    "JUnit.ControllerTest.testRun (1).executor": "Run",
-    "JUnit.ControllerTest.testRun.executor": "Run",
-    "JUnit.SpringAoptest.executor": "Run",
-    "JUnit.SpringAoptest.testAdd.executor": "Run",
-    "JUnit.SpringTexTest.testUserService.executor": "Run",
-    "JUnit.Test.getBeanFormIoc.executor": "Debug",
-    "JUnit.Test.test.executor": "Run",
-    "JUnit.Test.test1.executor": "Run",
-    "JUnit.springannotation_01.executor": "Run",
-    "JUnit.springannotation_01.testIoc_02.executor": "Run",
-    "JUnit.springannotation_01.testIoc_03.executor": "Run",
-    "JUnit.springannotation_01.testIoc_04.executor": "Run",
-    "JUnit.testHomeWorke.testHomeWorke.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/毕业设计/旅游小程序成功【v14.17.6】/基于springboot的旅游小程序/travel(1)/travel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.Main.executor": "Run",
-    "应用程序.Test.executor": "Run",
-    "应用程序.testHomeWorke.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ControllerTest.testRun (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ControllerTest.testRun.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringAoptest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringAoptest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringTexTest.testUserService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test.getBeanFormIoc.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.Test.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test.test1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.springannotation_01.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.springannotation_01.testIoc_02.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.springannotation_01.testIoc_03.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.springannotation_01.testIoc_04.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.testHomeWorke.testHomeWorke.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/毕业设计/旅游小程序成功【v14.17.6】/基于springboot的旅游小程序/travel(1)/travel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.Main.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Test.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.testHomeWorke.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Joon\Desktop\JavaStudy\53.SSM-SpringFramework\01_Ssm-Spring-part\spring-ioc-practice-06\src\main\resources" />
@@ -209,6 +200,8 @@
       <workItem from="1731153243606" duration="3870000" />
       <workItem from="1731231554536" duration="8876000" />
       <workItem from="1731309485285" duration="5431000" />
+      <workItem from="1731482830011" duration="538000" />
+      <workItem from="1731483452218" duration="25000" />
     </task>
     <servers />
   </component>

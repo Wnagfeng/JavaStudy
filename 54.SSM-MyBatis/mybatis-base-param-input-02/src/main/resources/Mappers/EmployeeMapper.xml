@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<mapper namespace="org.example.mapper.EmployeeMapper">
+    <!--
+    这里我们讲解一下: #{key} 和 ${key}的区别
+    #{key}代表动态传入的参数,并且进行赋值!
+    ${key}代表静态参数,在sql中直接使用,不需要进行赋值! 相当于参数的拼接！
+    例如：
+    select * from t_emp where emp_id = #{empId} 【emp_id = xxx 】
+    select * from t_emp where emp_id = ${empId} 【 "emp_id = " + xxx 】
+    -->
+    <select id="selectEmployee" resultType="org.example.pojo.Employee">
+        <!-- #{empId}代表动态传入的参数,并且进行赋值!后面详细讲解 -->
+        select emp_id empId,emp_name empName, emp_salary empSalary from
+        t_emp where emp_id = #{empId}
+    </select>
+    <!--    这里讲解简单类型的传值-->
+    <!--    对于简单值我们这里的key #{key} 这里的key你可以随便写 当然了我们建议你使用接口中的方法参数名来作为key-->
+    <!--    对于ddl语句这里的返回值 我们一般不写 他默认就是int类型-->
+    <delete id="DeleteByID">
+        delete from t_emp where emp_id = #{empId}
+    </delete>
+    <select id="selectbySalary" resultType="org.example.pojo.Employee">
+        select emp_id empId,emp_name empName, emp_salary empSalary from
+        t_emp where emp_salary = #{salary}
+    </select>
+    <!--    这里讲解传入实体参数-->
+    <!--    对于传入实体参数我们这里的key #{key} 这里的key 就是实体中的属性名 例如 #{empId} #{empName} #{empSalary}-->
+    <insert id="insertEmployee" parameterType="org.example.pojo.Employee">
+        insert into t_emp(emp_id,emp_name,emp_salary) values(#{empId},#{empName},#{empSalary})
+    </insert>
+    <!--    这里讲解多个简单类型传入-->
+    <!--    按照形参传递不行的！-->
+    <!--
+    方案一：使用注解规定参数名称 比如 @Param("name")  @Param("salary")  那么key就是#{name} #{salary}
+    方案二：按照myatis的默认机制 arg0 arg1 arg2 那么key就是#{arg0} #{arg1} #{arg2}
+    -->
+    <select id="selectByNameAndSalary" resultType="org.example.pojo.Employee">
+        select emp_id empId,emp_name empName, emp_salary empSalary from
+        t_emp where emp_name = #{name} and emp_salary = #{salary}
+    </select>
+    <!--    这里讲解传入map类型参数-->
+    <!--
+             对于传入map类型参数我们这里的key如果你需要传入map类型参数 那么key就是map中的key 例如 #{empId} #{empName} #{empSalary}
+             parameterType 就是map类型 可以省略 不过建议写上
+    -->
+    <insert id="insertEmployeeByMap" parameterType="map">
+        insert into t_emp(emp_id,emp_name,emp_salary) values(#{empId},#{empName},#{empSalary})
+    </insert>
+</mapper>

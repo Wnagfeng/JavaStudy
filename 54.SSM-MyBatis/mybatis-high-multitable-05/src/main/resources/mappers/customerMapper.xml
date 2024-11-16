@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.customerMapper">
+
+    <!--这里的Type只需要写泛型的类型即可-->
+    <!--    你可以试着把这里的的映射全部关掉你会发现它查询的结果有一部分是null-->
+    <resultMap id="customerMap" type="Customer">
+        <id column="customer_id" property="customerId"/>
+        <collection property="orderList" ofType="Order">
+            <id column="order_id" property="orderId"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="queryList" resultMap="customerMap">
+        SELECT * FROM t_order tor JOIN t_customer tur
+        ON tor.customer_id = tur.customer_id
+    </select>
+</mapper>

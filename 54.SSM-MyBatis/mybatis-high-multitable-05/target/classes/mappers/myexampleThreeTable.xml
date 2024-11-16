@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.customerMapper">
+    <!--selectAllOrders  获取所有的订单信息-->
+    <!--    SELECT-->
+    <!--    o.id AS order_id,-->
+    <!--    u.username,-->
+    <!--    p.name AS product_name,-->
+    <!--    p.price AS product_price,-->
+    <!--    o.quantity,-->
+    <!--    o.order_date-->
+    <!--    FROM-->
+    <!--    orders o-->
+    <!--    JOIN-->
+    <!--    users u ON o.user_id = u.id-->
+    <!--    JOIN-->
+    <!--    products p ON o.product_id = p.id;-->
+    <resultMap id="OrderSMap" type="Orders">
+        <id column="order_id" property="id"/>
+        <collection property="users" ofType="Orders">
+            <id column="id" property="id"/>
+        </collection>
+    </resultMap>
+    <select id="selectAllOrders" resultMap="OrderSMap">
+        SELECT
+        o.id AS order_id,
+        u.username,
+        p.NAME AS product_name,
+        p.price AS product_price,
+        o.quantity
+        FROM
+        orders o
+        JOIN users u ON o.user_id = u.id
+        JOIN products p ON o.product_id = p.id;
+    </select>
+</mapper>

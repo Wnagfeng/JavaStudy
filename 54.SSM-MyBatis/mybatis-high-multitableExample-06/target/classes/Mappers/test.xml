@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.Mapper.OrderMapper">
+
+    <resultMap id="orderResultMap" type="org.example.pojo.Orders">
+        <id column="order_id" property="OrdersId"/>
+        <association property="user" javaType="org.example.pojo.Users">
+            <id column="user_id" property="UserId"/>
+            <result column="user_name" property="Name"/>
+            <result column="email" property="Email"/>
+        </association>
+        <collection property="ProductsList" ofType="org.example.pojo.Products">
+            <id column="product_id" property="ProductId"/>
+            <result column="product_name" property="Name"/>
+            <result column="price" property="Price"/>
+        </collection>
+    </resultMap>
+
+    <select id="selectAllOrders" resultMap="orderResultMap">
+        SELECT
+        u.id AS user_id,
+        u.name AS user_name,
+        u.email AS email,
+        o.id AS order_id,
+        p.id AS product_id,
+        p.name AS product_name,
+        p.price AS price,
+        od.quantity AS quantity
+        FROM
+        Users u
+        JOIN
+        Orders o ON u.id = o.user_id
+        JOIN
+        OrderDetails od ON o.id = od.order_id
+        JOIN
+        Products p ON od.product_id = p.id
+        ORDER BY
+        u.id;
+
+    </select>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace等于mapper接口类的全限定名,这样实现对应 -->
+<mapper namespace="org.example.mapper.UserMapper">
+    <!--    1.插入方法 需要返回id-->
+    <insert id="insert" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        INSERT INTO user (username, password)
+        VALUES (#{username}, #{password})
+    </insert>
+    <!--    根据id更新数据-->
+    <update id="update">
+        UPDATE user
+        SET username = #{username}, password = #{password}
+        WHERE id = #{id}
+    </update>
+    <!--    根据id删除数据-->
+    <delete id="delete">
+        DELETE FROM user
+        WHERE id = #{id}
+    </delete>
+    <!--    selectById-->
+    <select id="selectById" resultType="org.example.pojo.User">
+        SELECT * FROM user
+        WHERE id = #{id}
+    </select>
+    <!--    selectAll-->
+    <select id="selectAll" resultType="org.example.pojo.User">
+        SELECT * FROM user
+    </select>
+
+</mapper>

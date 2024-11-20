@@ -12,6 +12,10 @@
         <module>SpringMVC-HelloWord-01</module>
         <module>SpringMVC-Input-02</module>
         <module>SpringMVC-Output-03</module>
+        <module>SpringMVC-RESTFulAPIExample-04</module>
+        <module>SpringMVC-GlobalExceptionHandling-05</module>
+        <module>SpringMVC-Interceptor-06</module>
+        <module>SpringMVC-Parametervalidation-07</module>
     </modules>
 
     <properties>

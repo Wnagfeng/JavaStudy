@@ -1,0 +1,30 @@
+2024-11-26 20:56:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 20:57:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 20:58:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:00:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:01:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:02:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:04:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:05:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:08:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]
+2024-11-26 21:09:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM [*]user"; expected "identifier"; SQL statement:
+SELECT * FROM user [42001-214]

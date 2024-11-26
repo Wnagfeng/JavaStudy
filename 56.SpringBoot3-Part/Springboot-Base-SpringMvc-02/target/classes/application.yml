@@ -1,0 +1,5 @@
+server:
+  port: 8081
+  #配置springmvc的配置
+  servlet:
+    context-path: /springboot-base-springmvc-02

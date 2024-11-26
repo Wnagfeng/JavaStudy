@@ -1,0 +1,14 @@
+# 这里的Sprinboot的配置文件，主要是配置一些Springboot的基本属性，比如端口号、日志级别、数据库连接信息等。
+server:
+  port: 8080 # 服务端口号
+  servlet:
+    context-path: / # 服务上下文路径
+
+user:
+  name: CoderJoon # 用户名
+  password: 123456 # 密码
+  age: 21 # 年龄
+  skills: # 技能列表
+    - Java
+    - Spring Boot
+    - MySQL

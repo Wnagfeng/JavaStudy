@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>springboot-base-quick-01</artifactId>
+    <artifactId>springboot-base-mybatis-04</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

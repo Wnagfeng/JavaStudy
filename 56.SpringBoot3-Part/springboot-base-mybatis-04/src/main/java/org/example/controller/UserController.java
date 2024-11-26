@@ -1,24 +1,24 @@
 package org.example.controller;
 
+import org.example.mapper.UserMapper;
 import org.example.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/Hello")
-public class HelloWordController {
+@RequestMapping("/user")
+
+public class UserController {
     @Autowired
-    private User user;
+    private UserMapper userMapper;
 
-    @GetMapping("/Word")
-    public String helloWord() {
-        return "Hello Word!";
-    }
-
-    @GetMapping("/RedFile")
-    public User redFile() {
-        return user;
+    @GetMapping("/get")
+    public List<User> getUser() {
+        List<User> userList = userMapper.selectAll();
+        return userList;
     }
 }

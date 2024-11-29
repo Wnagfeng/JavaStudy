@@ -1,4 +1,6 @@
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.example.MainApplication;
 import org.example.mappers.UserMapper;
@@ -18,6 +20,7 @@ public class MyBatisPlustest {
     @Autowired
     private UserServiceImpl userService;
 
+
     @Test
     public void test() {
         List<Users> userList = userMapper.selectList(null);
@@ -35,7 +38,6 @@ public class MyBatisPlustest {
         user.setEmail("test@test.com");
         userMapper.insert(user);
     }
-
 
     // 测试saveorupdate
     @Test
@@ -84,6 +86,75 @@ public class MyBatisPlustest {
             System.out.println(user);
         }
     }
+
+    //    LambdaQueryWrapper的使用
+    @Test
+    public void testLambdaQuery() {
+        //Users::getId 等价于 users.getId() 这是Java8的新特性
+
+        List<Users> userList = userMapper.selectList(Wrappers.<Users>lambdaQuery().eq(Users::getId, 1));
+        for (Users user : userList) {
+            System.out.println(user);
+        }
+    }
+
+    @Test
+    public void testLambdaQuery1() {
+        LambdaQueryWrapper<Users> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(Users::getId, 1);
+        List<Users> userList = userMapper.selectList(lambdaQueryWrapper);
+        for (Users user : userList) {
+            System.out.println(user);
+        }
+
+    }
+
+    //    演示LambadaUpdateWrapper的使用
+    @Test
+    public void testLambdaUpdate() {
+        LambdaQueryWrapper<Users> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        lambdaQueryWrapper.eq(Users::getId, 1);
+        Users user = new Users();
+        user.setName("test");
+        user.setEmail("test@test.com");
+        int update = userMapper.update(user, lambdaQueryWrapper);
+        System.out.println(update);
+    }
+
+    //    测试逻辑删除
+    @Test
+    public void testLogicDelete() {
+        userMapper.deleteById(2);
+    }
+
+    @Test
+    void getallUusers() {
+        List<Users> users = userMapper.selectList(null);
+        System.out.println("获取所有用户");
+        for (Users user : users) {
+            System.out.println(user);
+        }
+    }
+
+    //    测试乐观lock(同时添加俩数据)
+    @Test
+    public void testOptimisticLock() {
+        Users user1 = userMapper.selectById(5);
+        Users user2 = userMapper.selectById(5);
+        user1.setName("user1");
+        user2.setName("user2");
+        userMapper.updateById(user1);
+        userMapper.updateById(user2);
+    }
+
+    //    测试全表操作
+    @Test
+    public void testAllTable() {
+        userMapper.delete(null);
+        userMapper.selectList(null).forEach(System.out::println);
+    }
+
+//
 
 
 }

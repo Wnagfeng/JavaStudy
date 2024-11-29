@@ -2,6 +2,8 @@ package org.example;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.BlockAttackInnerInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -24,6 +26,10 @@ public class MainApplication {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         // 这里添加分页插件 这里需要指定 数据库类型
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
+        //乐观锁版本号插件
+        interceptor.addInnerInterceptor(new OptimisticLockerInnerInterceptor());
+        // 全表操作的插件
+        interceptor.addInnerInterceptor(new BlockAttackInnerInterceptor());
         return interceptor;
     }
 
